@@ -1,0 +1,3 @@
+**Subject:** Maya Okonkwo designs Velocity, a cast-bronze skateboard, with Vizcom
+
+Maya Okonkwo, an industrial designer based in Lagos, designed Velocity — a single-edition skateboard with a deck cast from one piece of bronze — using Vizcom to move from sketch to a foundry-ready specification with the grip surface and patina already decided. The project demonstrates Vizcom's role in industrial design as the space where single-shot material decisions get made before the cost of being wrong arrives. Kim Lu, Growth Marketing at Vizcom, is available for comment; full story at vizcom.com/blog/hold-your-ideas-velocity.

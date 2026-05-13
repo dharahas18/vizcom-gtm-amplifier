@@ -1,0 +1,3 @@
+Subject: Footwear designers Andrew Moya and Juan Rujana design The Saman in Vizcom, produced with Zellerfeld
+
+Andrew Moya and Juan Rujana designed The Saman, a mule rooted in Latino culture and Pre-Columbian artifacts, using Vizcom to iterate on amber color, seashell-form body, and tree-root surface veins before fabrication. The project demonstrates Vizcom's role in footwear design, where designers translate cultural reference material into production-ready renders that 3D-printing partner Zellerfeld used as the print spec for single-material elastomer production. Kim Lu, Growth Marketing Manager at Vizcom, is available for comment; full story at https://vizcom.com/blog/hold-your-ideas-the-saman.

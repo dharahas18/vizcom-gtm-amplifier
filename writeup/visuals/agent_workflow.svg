@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" font-family="-apple-system, system-ui, sans-serif">
+  <title>Vizcom GTM Amplifier — end-to-end workflow</title>
+  <desc>Four-phase flow from human input to publish, showing the 5 channel-native outputs the agent produces from one signal.</desc>
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6e6e73"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font-size: 18px; font-weight: 700; fill: #1d1d1f; }
+    .subtitle { font-size: 12px; fill: #6e6e73; font-style: italic; }
+    .phase { font-size: 14px; font-weight: 700; }
+    .who { font-size: 11px; fill: #6e6e73; }
+    .body { font-size: 12px; fill: #1d1d1f; }
+    .chip-name { font-size: 11px; font-weight: 600; fill: #1d1d1f; }
+    .chip-sub { font-size: 10px; fill: #6e6e73; }
+    .arrow { stroke: #6e6e73; stroke-width: 2; fill: none; }
+  </style>
+
+  <rect width="880" height="420" fill="#fafafa"/>
+  <text x="440" y="34" class="title" text-anchor="middle">How the agent runs</text>
+  <text x="440" y="54" class="subtitle" text-anchor="middle">One signal in. Five channel-native outputs. ~25 min end to end.</text>
+
+  <!-- 4 phase boxes -->
+  <rect x="40" y="100" width="180" height="100" fill="#fff" stroke="#1976d2" stroke-width="2" rx="6"/>
+  <text x="130" y="125" class="phase" text-anchor="middle" fill="#1976d2">1. INPUT</text>
+  <text x="130" y="142" class="who" text-anchor="middle">human</text>
+  <text x="130" y="166" class="body" text-anchor="middle">drop a doc, URL,</text>
+  <text x="130" y="182" class="body" text-anchor="middle">or one-line note</text>
+
+  <line x1="220" y1="150" x2="240" y2="150" class="arrow" marker-end="url(#arr)"/>
+
+  <rect x="240" y="100" width="180" height="100" fill="#fff" stroke="#f57c00" stroke-width="2" rx="6"/>
+  <text x="330" y="125" class="phase" text-anchor="middle" fill="#f57c00">2. INTAKE</text>
+  <text x="330" y="142" class="who" text-anchor="middle">agent</text>
+  <text x="330" y="166" class="body" text-anchor="middle">extract facts,</text>
+  <text x="330" y="182" class="body" text-anchor="middle">validate, similarity</text>
+
+  <line x1="420" y1="150" x2="440" y2="150" class="arrow" marker-end="url(#arr)"/>
+
+  <rect x="440" y="100" width="180" height="100" fill="#fff" stroke="#388e3c" stroke-width="2" rx="6"/>
+  <text x="530" y="125" class="phase" text-anchor="middle" fill="#388e3c">3. DRAFT</text>
+  <text x="530" y="142" class="who" text-anchor="middle">agent</text>
+  <text x="530" y="166" class="body" text-anchor="middle">5 channel files</text>
+  <text x="530" y="182" class="body" text-anchor="middle">+ summary + preview</text>
+
+  <line x1="620" y1="150" x2="640" y2="150" class="arrow" marker-end="url(#arr)"/>
+
+  <rect x="640" y="100" width="180" height="100" fill="#fff" stroke="#7b1fa2" stroke-width="2" rx="6"/>
+  <text x="730" y="125" class="phase" text-anchor="middle" fill="#7b1fa2">4. PUBLISH</text>
+  <text x="730" y="142" class="who" text-anchor="middle">human</text>
+  <text x="730" y="166" class="body" text-anchor="middle">review preview.html,</text>
+  <text x="730" y="182" class="body" text-anchor="middle">post on the sequence</text>
+
+  <!-- Drop arrow from DRAFT to outputs -->
+  <line x1="530" y1="200" x2="530" y2="240" class="arrow" marker-end="url(#arr)"/>
+  <text x="545" y="225" class="who">outputs:</text>
+
+  <!-- 5 output chips, centered under the flow -->
+  <rect x="120" y="250" width="120" height="60" fill="#fff" stroke="#9e9e9e" stroke-width="1" rx="4"/>
+  <text x="180" y="272" class="chip-name" text-anchor="middle">blog.md</text>
+  <text x="180" y="290" class="chip-sub" text-anchor="middle">800–1,500 words</text>
+  <text x="180" y="304" class="chip-sub" text-anchor="middle">2–3 renders</text>
+
+  <rect x="250" y="250" width="120" height="60" fill="#fff" stroke="#9e9e9e" stroke-width="1" rx="4"/>
+  <text x="310" y="272" class="chip-name" text-anchor="middle">linkedin.md</text>
+  <text x="310" y="290" class="chip-sub" text-anchor="middle">600–1,300 chars</text>
+  <text x="310" y="304" class="chip-sub" text-anchor="middle">hero + closer</text>
+
+  <rect x="380" y="250" width="120" height="60" fill="#fff" stroke="#9e9e9e" stroke-width="1" rx="4"/>
+  <text x="440" y="272" class="chip-name" text-anchor="middle">x_thread.md</text>
+  <text x="440" y="290" class="chip-sub" text-anchor="middle">2-tweet pair</text>
+  <text x="440" y="304" class="chip-sub" text-anchor="middle">render on tweet 1</text>
+
+  <rect x="510" y="250" width="120" height="60" fill="#fff" stroke="#9e9e9e" stroke-width="1" rx="4"/>
+  <text x="570" y="272" class="chip-name" text-anchor="middle">geo_aeo.md</text>
+  <text x="570" y="290" class="chip-sub" text-anchor="middle">100–200 words</text>
+  <text x="570" y="304" class="chip-sub" text-anchor="middle">Q&amp;A for AI search</text>
+
+  <rect x="640" y="250" width="120" height="60" fill="#fff" stroke="#9e9e9e" stroke-width="1" rx="4"/>
+  <text x="700" y="272" class="chip-name" text-anchor="middle">pr_pitch.md</text>
+  <text x="700" y="290" class="chip-sub" text-anchor="middle">3 sentences</text>
+  <text x="700" y="304" class="chip-sub" text-anchor="middle">trade press</text>
+
+  <!-- Bottom footer -->
+  <rect x="40" y="340" width="780" height="60" fill="#fff" stroke="#d4d4d4" stroke-width="1" rx="5"/>
+  <text x="60" y="362" class="body" font-weight="600">Voice rules enforced every run:</text>
+  <text x="60" y="380" class="body">designer-first · specific over abstract · no hype words · channel-native · never invent facts · AI as extension, not replacement</text>
+  <text x="60" y="395" class="chip-sub">All 5 outputs land in one folder with the hero render copied in and a browser-openable preview.html for visual review.</text>
+</svg>

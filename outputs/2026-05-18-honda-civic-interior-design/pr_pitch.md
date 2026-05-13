@@ -1,0 +1,3 @@
+**Subject:** Honda's interior-design team uses Vizcom on the 2027 Civic interior redesign
+
+Honda's interior-design team in Tokyo, led on this program by senior designer Hiroshi Tanaka, used Vizcom across nine months on the 2027 Civic interior redesign to compress concept-to-executive-review from seven days to two and to move from roughly three design reviews per quarter to roughly eleven. The project demonstrates Vizcom's role in automotive interior design as the layer where sketches, material exploration, and stakeholder walkthroughs converge in the hands of the designer who is presenting the work. Sophia Silver, Product Marketing at Vizcom, is available for comment; full story at https://vizcom.com/blog/hold-your-ideas-2027-civic-interior.

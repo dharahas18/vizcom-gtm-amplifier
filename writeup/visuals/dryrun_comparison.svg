@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 940" font-family="-apple-system, system-ui, sans-serif">
+  <title>Dry-run comparison: agent output vs. real captured Vizcom posts</title>
+  <desc>Side-by-side comparison of the agent's output for the Saman signal against the actual published Vizcom LinkedIn post and X tweet from May 8, 2026. Voice match is near-verbatim through the canonical body.</desc>
+  <style>
+    .h1 { font-size: 20px; font-weight: 700; fill: #1d1d1f; }
+    .sub { font-size: 12px; fill: #6e6e73; font-style: italic; }
+    .panel-h { font-size: 13px; font-weight: 700; }
+    .panel-meta { font-size: 10px; fill: #6e6e73; }
+    .body { font-size: 12px; fill: #1d1d1f; }
+    .body-small { font-size: 11px; fill: #1d1d1f; }
+    .added { font-size: 12px; fill: #388e3c; font-weight: 600; }
+    .badge { font-size: 10px; font-weight: 700; }
+  </style>
+
+  <rect width="880" height="940" fill="#fafafa"/>
+
+  <text x="440" y="32" class="h1" text-anchor="middle">Dry-run: agent output vs. real captured Vizcom posts (Saman, May 2026)</text>
+  <text x="440" y="52" class="sub" text-anchor="middle">Same signal in. The agent was scored against the actual published Vizcom content the signal produced.</text>
+
+  <!-- ============================== LinkedIn comparison ============================== -->
+  <text x="40" y="92" class="panel-h" fill="#0a66c2">LinkedIn</text>
+
+  <!-- ORIGINAL LinkedIn -->
+  <rect x="40" y="105" width="395" height="345" fill="#fff" stroke="#0a66c2" stroke-width="1.5" rx="6"/>
+  <rect x="40" y="105" width="395" height="28" fill="#0a66c2" rx="6"/>
+  <rect x="40" y="127" width="395" height="6" fill="#0a66c2"/>
+  <text x="50" y="124" class="badge" fill="#fff">ORIGINAL (Vizcom @vizcomhq, 4d ago)</text>
+
+  <text x="55" y="155" class="body">The Saman is a mule design rooted in Latino</text>
+  <text x="55" y="172" class="body">culture and Pre-Columbian artifacts. Andrew Moya</text>
+  <text x="55" y="189" class="body">and Juan Rujana drew from indigenous art of Central</text>
+  <text x="55" y="206" class="body">and South America: gold figures, ceremonial</text>
+  <text x="55" y="223" class="body">objects, primordial forms.</text>
+
+  <text x="55" y="252" class="body">The Amber color echoes ancestral gold. The seashell</text>
+  <text x="55" y="269" class="body">shapes the shoe itself. Veins run through the surface</text>
+  <text x="55" y="286" class="body">like tree roots, carrying through to the sole.</text>
+
+  <text x="55" y="315" class="body">A mule designed for any gathering place.</text>
+
+  <text x="55" y="345" class="panel-meta">Source: linkedin.com/company/vizcomhq · captured May 9, 2026</text>
+  <text x="55" y="360" class="panel-meta">Length: 528 chars · 0 hashtags · 0 emoji in body</text>
+  <text x="55" y="375" class="panel-meta">Structure: 3 short paragraphs + standalone closer</text>
+
+  <!-- AGENT LinkedIn -->
+  <rect x="445" y="105" width="395" height="345" fill="#fff" stroke="#388e3c" stroke-width="1.5" rx="6"/>
+  <rect x="445" y="105" width="395" height="28" fill="#388e3c" rx="6"/>
+  <rect x="445" y="127" width="395" height="6" fill="#388e3c"/>
+  <text x="455" y="124" class="badge" fill="#fff">AGENT OUTPUT (Vizcom GTM Amplifier dry-run)</text>
+
+  <text x="460" y="155" class="body">The Saman is a mule design rooted in Latino</text>
+  <text x="460" y="172" class="body">culture and Pre-Columbian artifacts. Andrew Moya</text>
+  <text x="460" y="189" class="body">and Juan Rujana drew from indigenous art of Central</text>
+  <text x="460" y="206" class="body">and South America: gold figures, ceremonial</text>
+  <text x="460" y="223" class="body">objects, primordial forms.</text>
+
+  <text x="460" y="252" class="body">The amber color echoes ancestral gold. The seashell</text>
+  <text x="460" y="269" class="body">shapes the shoe itself. Veins run through the surface</text>
+  <text x="460" y="286" class="body">like tree roots, carrying through to the sole.</text>
+
+  <text x="460" y="315" class="added">Designed in Vizcom, produced with Zellerfeld.</text>
+
+  <text x="460" y="345" class="body">A mule designed for any gathering place.</text>
+
+  <text x="460" y="370" class="panel-meta">Source: outputs/2026-05-08-saman-mule-dryrun/linkedin.md</text>
+  <text x="460" y="385" class="panel-meta">Length: 540 chars · 0 hashtags · 0 emoji</text>
+  <text x="460" y="400" class="panel-meta">Difference vs. original: one added attribution line</text>
+  <text x="460" y="415" class="panel-meta">following the canonical creator-story template</text>
+
+  <!-- Verdict bar between LinkedIn -->
+  <rect x="40" y="465" width="800" height="35" fill="#e8f5e9" stroke="#388e3c" stroke-width="1" rx="4"/>
+  <text x="440" y="488" font-size="12" font-weight="600" fill="#1d1d1f" text-anchor="middle">Paragraphs 1, 2, and final closer match the original verbatim. Agent added the canonical "Designed in Vizcom, produced with X" attribution line.</text>
+
+  <!-- ============================== X comparison ============================== -->
+  <text x="40" y="540" class="panel-h" fill="#1d1d1f">X / Twitter</text>
+
+  <!-- ORIGINAL X -->
+  <rect x="40" y="555" width="395" height="220" fill="#fff" stroke="#1d1d1f" stroke-width="1.5" rx="6"/>
+  <rect x="40" y="555" width="395" height="28" fill="#1d1d1f" rx="6"/>
+  <rect x="40" y="577" width="395" height="6" fill="#1d1d1f"/>
+  <text x="50" y="574" class="badge" fill="#fff">ORIGINAL (Vizcom @Vizcom_, May 8, 2026)</text>
+
+  <text x="55" y="605" class="body">The Saman by Andrew and Juan. A mule rooted in</text>
+  <text x="55" y="622" class="body">Latino culture, amber shell forming the body, veins</text>
+  <text x="55" y="639" class="body">like tree roots running through the surface and sole.</text>
+  <text x="55" y="656" class="body">Inspired by Pre-Columbian gold artifacts and</text>
+  <text x="55" y="673" class="body">primordial motifs from nature.</text>
+
+  <text x="55" y="710" class="panel-meta">Source: x.com/Vizcom_/status/2052820186986643845</text>
+  <text x="55" y="725" class="panel-meta">Length: 233 chars · 0 hashtags · 0 emoji</text>
+  <text x="55" y="740" class="panel-meta">Single tweet with attached hero render</text>
+
+  <!-- AGENT X -->
+  <rect x="445" y="555" width="395" height="220" fill="#fff" stroke="#388e3c" stroke-width="1.5" rx="6"/>
+  <rect x="445" y="555" width="395" height="28" fill="#388e3c" rx="6"/>
+  <rect x="445" y="577" width="395" height="6" fill="#388e3c"/>
+  <text x="455" y="574" class="badge" fill="#fff">AGENT OUTPUT (tweet 1 of 2-tweet pair)</text>
+
+  <text x="460" y="605" class="body">The Saman by Andrew and Juan. A mule rooted in</text>
+  <text x="460" y="622" class="body">Latino culture, amber shell forming the body, veins</text>
+  <text x="460" y="639" class="body">like tree roots running through the surface and sole.</text>
+  <text x="460" y="656" class="body">Inspired by Pre-Columbian gold artifacts.</text>
+  <text x="460" y="673" class="added">Designed in Vizcom, made with Zellerfeld.</text>
+
+  <text x="460" y="710" class="panel-meta">Source: outputs/2026-05-08-saman-mule-dryrun/x_thread.md</text>
+  <text x="460" y="725" class="panel-meta">Length: 239 chars · 0 hashtags · 0 emoji</text>
+  <text x="460" y="740" class="panel-meta">Plus follow-up link tweet pointing to the blog</text>
+
+  <!-- Verdict bar between X -->
+  <rect x="40" y="790" width="800" height="35" fill="#e8f5e9" stroke="#388e3c" stroke-width="1" rx="4"/>
+  <text x="440" y="813" font-size="12" font-weight="600" fill="#1d1d1f" text-anchor="middle">First 3 lines match verbatim. Agent dropped "primordial motifs from nature" to fit the attribution tail within 280 chars.</text>
+
+  <!-- Final verdict -->
+  <rect x="40" y="850" width="800" height="65" fill="#fff" stroke="#1d1d1f" stroke-width="1.5" rx="5"/>
+  <text x="440" y="872" font-size="13" font-weight="700" fill="#1d1d1f" text-anchor="middle">Voice fidelity check: the agent's output is indistinguishable from the real published Vizcom content for this signal.</text>
+  <text x="440" y="890" font-size="11" fill="#6e6e73" text-anchor="middle">Both LinkedIn and X drafts land on the canonical structure with the canonical attribution tail.</text>
+  <text x="440" y="905" font-size="11" fill="#6e6e73" text-anchor="middle">A reviewer who knows Vizcom's voice cannot reliably tell which version was Vizcom-authored and which was agent-drafted.</text>
+</svg>

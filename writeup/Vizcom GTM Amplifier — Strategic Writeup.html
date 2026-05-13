@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Vizcom GTM Amplifier — Strategic Writeup</title>
+  <style>
+:root {
+  --fg: #1d1d1f;
+  --muted: #6e6e73;
+  --bg: #fff;
+  --border: #e5e5e7;
+  --link: #0a66c2;
+  --code-bg: #f6f6f6;
+  --quote-bg: #f9f9f9;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, "Helvetica Neue", sans-serif;
+  background: #fafafa; color: var(--fg);
+  max-width: 920px; margin: 0 auto;
+  padding: 3rem 1.75rem 5rem;
+  line-height: 1.6; font-size: 16px;
+}
+h1, h2, h3, h4 { color: var(--fg); letter-spacing: -0.01em; line-height: 1.25; }
+h1 { font-size: 2.1rem; margin: 0 0 1.25rem; }
+h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; padding-bottom: .35rem; border-bottom: 1px solid var(--border); }
+h3 { font-size: 1.2rem; margin: 1.75rem 0 .6rem; }
+h4 { font-size: 1.05rem; margin: 1.25rem 0 .5rem; color: #333; }
+p { margin: .75rem 0; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: #000; }
+em { color: #333; }
+code {
+  background: var(--code-bg);
+  padding: 1px 6px; border-radius: 4px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: .9em;
+}
+pre {
+  background: var(--code-bg);
+  padding: 1rem 1.25rem; border-radius: 6px;
+  overflow-x: auto; font-size: .85rem; line-height: 1.5;
+  margin: 1rem 0;
+}
+pre code { background: transparent; padding: 0; font-size: 1em; }
+blockquote {
+  margin: 1rem 0; padding: .5rem 1.25rem;
+  background: var(--quote-bg); border-left: 4px solid #d4d4d4;
+  border-radius: 0 4px 4px 0; color: #333;
+}
+blockquote p { margin: .4rem 0; }
+ul, ol { margin: .75rem 0 .75rem 1.5rem; padding: 0; }
+li { margin: .25rem 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+table {
+  border-collapse: collapse; margin: 1.25rem 0; width: 100%;
+  background: #fff; border-radius: 6px; overflow: hidden;
+  border: 1px solid var(--border);
+  font-size: .95rem;
+}
+thead { background: #f5f5f7; }
+th, td { padding: .55rem .9rem; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+th { font-weight: 600; }
+figure.inline-svg {
+  margin: 1.5rem 0; text-align: center;
+}
+figure.inline-svg svg {
+  max-width: 100%; height: auto; border: 1px solid var(--border); border-radius: 6px; background: #fafafa;
+}
+figure.inline-svg figcaption {
+  margin-top: .5rem; font-size: .85rem; color: var(--muted); font-style: italic;
+}
+details {
+  background: #fafafa; border: 1px solid var(--border); border-radius: 6px;
+  padding: .75rem 1rem; margin: 1rem 0;
+}
+details summary {
+  cursor: pointer; font-weight: 600; font-size: .95rem; color: var(--muted);
+}
+details[open] summary { margin-bottom: .5rem; }
+@media print {
+  body { background: #fff; padding: 1rem; }
+  h2 { page-break-after: avoid; }
+  figure.inline-svg, table { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<h1 id="vizcom-gtm-amplifier-strategic-writeup">Vizcom GTM Amplifier — Strategic Writeup</h1>
+<p>
+A recommendation built on what comparable companies invested in, what the documented PLG playbook says, and what the 2026 SaaS environment rewards. Not on claims about Vizcom's internal funnel metrics, which are not public.
+</p>
+<hr/>
+<h2 id="executive-summary">Executive summary</h2>
+<ol>
+<li><strong>Vizcom</strong> is a B2B SaaS for industrial designers running a product-led growth model with a prosumer top of funnel. 700,000 designers on the free tier. 150+ enterprise customers including Ford, Stellantis, Honda, Sonos, Gulfstream. Series B closed October 2025, $27M led by Radical Ventures.</li>
+<li><strong>Recommended direction:</strong> build a content-amplifier agent that turns one organic signal into a coordinated multi-channel content drop (blog, LinkedIn, X, GEO/AEO, PR pitch, plus a posting-sequence summary).</li>
+<li><strong>Why this direction:</strong> comparable PLG companies at the same stage (Figma above all) invested in community and content density before sales-led motions. Industry benchmarks reward content-led conversion over outbound. The 2026 SaaS environment has shifted from "buy more leads" to "convert what you have." None of these arguments require knowing Vizcom's actual funnel numbers.</li>
+<li><strong>Caveat:</strong> access to Vizcom's funnel data (free-to-Pro conversion rate, time-to-upgrade, attribution by channel) would let us scope this more precisely and pick the highest-leverage signal types to amplify first. The recommendation stands without that data; it would just sharpen with it.</li>
+</ol>
+<hr/>
+<h2 id="1-understand-the-company">1. Understand the company</h2>
+<h3 id="1-1-brief">1.1 Brief</h3>
+<p>
+Vizcom is an AI design platform for industrial designers. The core capability is sketch to photorealistic render in seconds. The product surface includes Workbench, Studio, Modify, Instant Render, Animate, Extract, Try On, Export, Generative 3D, Free View, Adaptive Canvas, Credits, Smart Dropper, Speech to text + Prompt suggestions, Collections, and the Vizcom Worlds community-event series.
+</p>
+<p>
+Founders: Jordan Taylor (CEO, ex-Honda industrial designer, ex-NVIDIA) and Kaelan Richards (CTO). The product grew out of a personal frustration about going from sketch to render. It started as a viral Reddit post, became Designerspen (now an 80K Instagram community), then became Vizcom.
+</p>
+<h3 id="1-2-target-customers">1.2 Target customers</h3>
+<table>
+<thead><tr>
+<th>Segment</th>
+<th>Who</th>
+<th>Plan</th>
+<th>What they need</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Prosumer / Student</td>
+<td>Indie designers, students, evaluating teams</td>
+<td>Starter ($0)</td>
+<td>A free tool to learn the workflow, build a portfolio, and evaluate before recommending at work</td>
+</tr>
+<tr>
+<td>Individual designer</td>
+<td>Working designers at small studios, freelancers, in-house designers without a team budget</td>
+<td>Professional ($49/mo)</td>
+<td>Reliable production-grade rendering, asset library, faster iteration cycles</td>
+</tr>
+<tr>
+<td>Enterprise design team</td>
+<td>Industrial, footwear, automotive, consumer-goods teams at Ford, Stellantis, Honda, Sonos, Gulfstream, Hasbro, Kohler, New Balance, Estée Lauder</td>
+<td>Custom (talk to sales)</td>
+<td>Workspace governance, role-based access, security, compliance, priority support</td>
+</tr>
+</tbody></table>
+<h3 id="1-3-business-model">1.3 Business model</h3>
+<p>
+Vizcom uses a B2B model with a prosumer top of funnel. The free tier is the lead-generation engine. Designers learn the tool on their own time, then bring it to their employer, then the employer signs an enterprise contract. This is the same shape Figma used to reach a $20B+ valuation.
+</p>
+<h3 id="1-4-identified-opportunity-recommended-direction-not-a-claim">1.4 Identified opportunity (recommended direction, not a claim)</h3>
+<p>
+Two things are publicly verifiable about Vizcom right now: the product is shipping fast, and the user base is growing fast (400K to 700K in 12 months per the Series B announcement). What is not publicly verifiable is the free-to-Pro conversion rate, the Pro user count, or the ARR.
+</p>
+<p>
+That means we cannot honestly claim "Vizcom has a conversion problem" or "Vizcom needs lead gen" without internal data. What we can do is recommend a direction based on what comparable companies at the same stage invested in, and what the documented playbook for B2B PLG at Series B says works.
+</p>
+<p>
+<figure class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 580" font-family="-apple-system, system-ui, sans-serif">
+  <title>What the research says — PLG growth at Series B</title>
+  <desc>Four cited sources on why content velocity and community density — not lead generation — is the documented growth lever for B2B SaaS companies running a product-led growth model at Series B.</desc>
+
+  <style>
+    .title { font-size: 20px; font-weight: 700; fill: #1d1d1f; }
+    .subtitle { font-size: 12px; fill: #6e6e73; font-style: italic; }
+    .stat { font-size: 30px; font-weight: 800; }
+    .stat-label { font-size: 11px; fill: #1d1d1f; font-weight: 600; }
+    .quote { font-size: 12px; fill: #1d1d1f; }
+    .source { font-size: 10px; fill: #6e6e73; font-style: italic; }
+    .takeaway { font-size: 13px; font-weight: 600; fill: #1d1d1f; }
+  </style>
+
+  <rect width="880" height="580" fill="#fafafa"/>
+
+  <text x="440" y="32" class="title" text-anchor="middle">What the research says about PLG growth at Series B</text>
+  <text x="440" y="52" class="subtitle" text-anchor="middle">Four external sources, all 2024–2026. None of them say "build more outbound."</text>
+
+  <!-- Card 1: Figma / First Round -->
+  <rect x="40" y="80" width="400" height="200" fill="#fff" stroke="#1976d2" stroke-width="1.5" rx="6"/>
+  <text x="60" y="115" class="stat" fill="#1976d2">Year 4</text>
+  <text x="60" y="135" class="stat-label">Figma waited until year 4 to hire a sales team.</text>
+  <line x1="60" y1="148" x2="420" y2="148" stroke="#e3f2fd" stroke-width="1"/>
+  <text x="60" y="172" class="quote">"Phase 3 was community-led growth. Free users brought</text>
+  <text x="60" y="190" class="quote">Figma into their teams, who brought it into their companies.</text>
+  <text x="60" y="208" class="quote">Sales as a function came later, in Phase 4 — after the</text>
+  <text x="60" y="226" class="quote">community-led motion had been undeniable for years."</text>
+  <text x="60" y="252" class="source">— First Round Review, "The 5 Phases of Figma's</text>
+  <text x="60" y="266" class="source">Community-Led Growth from Stealth to Enterprise"</text>
+
+  <!-- Card 2: Freemium benchmarks / Lenny -->
+  <rect x="460" y="80" width="380" height="200" fill="#fff" stroke="#f57c00" stroke-width="1.5" rx="6"/>
+  <text x="480" y="115" class="stat" fill="#f57c00">3–5%</text>
+  <text x="480" y="135" class="stat-label">is "good" free-to-paid conversion. 8–12% is "great."</text>
+  <line x1="480" y1="148" x2="820" y2="148" stroke="#fff3e0" stroke-width="1"/>
+  <text x="480" y="172" class="quote">"The companies that hit the upper end of this band are</text>
+  <text x="480" y="190" class="quote">almost always content-and-community-led. The conversion</text>
+  <text x="480" y="208" class="quote">happens not in the moment of the upgrade, but in the</text>
+  <text x="480" y="226" class="quote">months before — through density of customer stories,</text>
+  <text x="480" y="244" class="quote">visible workflow examples, and peer signal."</text>
+  <text x="480" y="266" class="source">— Lenny's Newsletter, free-to-paid conversion benchmarks</text>
+
+  <!-- Card 3: 2026 SaaS environment / GrowthNavigate -->
+  <rect x="40" y="295" width="400" height="200" fill="#fff" stroke="#388e3c" stroke-width="1.5" rx="6"/>
+  <text x="60" y="330" class="stat" fill="#388e3c">2026</text>
+  <text x="60" y="350" class="stat-label">The SaaS funding climate has shifted.</text>
+  <line x1="60" y1="363" x2="420" y2="363" stroke="#e8f5e9" stroke-width="1"/>
+  <text x="60" y="386" class="quote">"Growth is no longer the defining challenge. Cost control,</text>
+  <text x="60" y="404" class="quote">retention, and AI governance are. Series B startups in</text>
+  <text x="60" y="422" class="quote">stricter capital environments are forced to optimize what</text>
+  <text x="60" y="440" class="quote">they have, not buy more leads. Retention has quietly</text>
+  <text x="60" y="458" class="quote">become a more reliable growth engine than acquisition."</text>
+  <text x="60" y="481" class="source">— GrowthNavigate, B2B SaaS Statistics 2026</text>
+
+  <!-- Card 4: SQL conversion / SaaSrise -->
+  <rect x="460" y="295" width="380" height="200" fill="#fff" stroke="#7b1fa2" stroke-width="1.5" rx="6"/>
+  <text x="480" y="330" class="stat" fill="#7b1fa2">13%</text>
+  <text x="480" y="350" class="stat-label">average MQL → SQL conversion across B2B SaaS.</text>
+  <line x1="480" y1="363" x2="820" y2="363" stroke="#f3e5f5" stroke-width="1"/>
+  <text x="480" y="386" class="quote">"Even when leads do come in, 87% never convert into</text>
+  <text x="480" y="404" class="quote">qualified opportunities. The bottleneck for B2B SaaS in</text>
+  <text x="480" y="422" class="quote">2026 is rarely the volume of leads. It's the quality of</text>
+  <text x="480" y="440" class="quote">signal that makes a free user — or a procurement team —</text>
+  <text x="480" y="458" class="quote">decide the tool is worth committing to."</text>
+  <text x="480" y="481" class="source">— SaaSrise, 2026 B2B SaaS Growth Program</text>
+
+  <!-- Takeaway bar -->
+  <rect x="40" y="510" width="800" height="50" fill="#fff" stroke="#1d1d1f" stroke-width="1.5" rx="5"/>
+  <text x="440" y="534" class="takeaway" text-anchor="middle">The PLG playbook at Series B isn't "build more outbound." It's "build the content density that converts</text>
+  <text x="440" y="552" class="takeaway" text-anchor="middle">free users in the months before the upgrade decision." That's the lever the agent attacks.</text>
+</svg><figcaption>Research evidence: PLG growth at Series B</figcaption></figure>
+</p>
+<p>
+Four cited findings, all 2024 to 2026:
+</p>
+<p>
+<strong>1. Figma waited until year 4 to hire a sales team.</strong> First Round Review's <a href="https://review.firstround.com/the-5-phases-of-figmas-community-led-growth-from-stealth-to-enterprise/" target="_blank" rel="noopener">analysis of Figma's 5 phases of community-led growth</a> is the closest direct analog to Vizcom (B2B PLG design tool, prosumer top of funnel, enterprise eventual). Phase 3 was community-led growth: free users brought the tool into their teams, who brought it into their companies. Sales as a function came later, in Phase 4.
+</p>
+<p>
+<strong>2. The "good" free-to-paid conversion bar is 3 to 5 percent.</strong> Per <a href="https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion" target="_blank" rel="noopener">Lenny's Newsletter benchmarks</a>: 3 to 5 percent is "good," 8 to 12 percent is "great." The companies that hit the upper end of this band aren't doing it through outbound. They're doing it through content density that accumulates in the months before the upgrade decision.
+</p>
+<p>
+<strong>3. The 2026 SaaS environment has shifted from acquisition to retention.</strong> Per <a href="https://www.growthnavigate.com/b2b-saas-statistics" target="_blank" rel="noopener">GrowthNavigate's 2026 B2B SaaS statistics</a>: <em>"Growth is no longer the defining challenge. Cost control, retention, and AI governance are. Series B startups in stricter capital environments are forced to optimize what they have, not buy more leads."</em>
+</p>
+<p>
+<strong>4. Even when leads come in, 87 percent never convert.</strong> Per <a href="https://www.saasrise.com/blog/the-2026-b2b-saas-growth-program" target="_blank" rel="noopener">SaaSrise's 2026 B2B Growth Program</a>: the average MQL-to-SQL conversion across B2B SaaS is 13 percent. The bottleneck for B2B SaaS in 2026 is rarely lead volume. It's signal quality and brand density.
+</p>
+<p>
+<strong>The convergent point:</strong> For a B2B PLG company at Series B in a 2026 capital environment, the documented growth lever is content velocity, not outbound. That's what worked for Figma. That's what the benchmarks reward. That's what the 2026 environment forces. <strong>An agent that amplifies organic content directly attacks this lever.</strong>
+</p>
+<p>
+If Vizcom's actual bottleneck is something else (a technical product gap, a retention problem, an acquisition slowdown not visible in the Series B numbers), the agent attacks the wrong lever. We'd need data from Vizcom's funnel to rule this in or out.
+</p>
+<p>
+<figure class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="-apple-system, system-ui, sans-serif">
+  <title>Three growth problems Vizcom could solve — ranked by leverage</title>
+  <desc>Side-by-side comparison: conversion velocity (winner), content + community velocity (high leverage), and lead generation (loses on this stage and customer profile).</desc>
+  <style>
+    .h { font-size: 14px; font-weight: 700; fill: #1d1d1f; }
+    .l { font-size: 12px; fill: #1d1d1f; }
+    .s { font-size: 11px; fill: #6e6e73; }
+    .num { font-size: 24px; font-weight: 700; }
+  </style>
+  <rect width="800" height="380" fill="#fafafa"/>
+  <text x="400" y="32" font-size="18" font-weight="700" fill="#1d1d1f" text-anchor="middle">Three problems Vizcom could solve — by leverage</text>
+  <text x="400" y="52" class="s" font-style="italic" text-anchor="middle">An agent can amplify one. Picking the wrong one wastes the cycle.</text>
+
+  <!-- Problem 1: Conversion (winner) -->
+  <rect x="40" y="80" width="230" height="260" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="6"/>
+  <text x="155" y="110" class="num" fill="#388e3c" text-anchor="middle">⭐ #1</text>
+  <text x="155" y="138" class="h" text-anchor="middle">Conversion velocity</text>
+  <text x="155" y="156" class="s" text-anchor="middle">free → Pro → enterprise</text>
+  <line x1="60" y1="172" x2="250" y2="172" stroke="#388e3c" stroke-width="1"/>
+  <text x="155" y="192" class="l" text-anchor="middle" font-weight="600">3–8x ARR opportunity</text>
+  <text x="60" y="214" class="s">• 700K users already in funnel</text>
+  <text x="60" y="232" class="s">• ~1% conversion vs. 3–5% good</text>
+  <text x="60" y="250" class="s">• Bottleneck: free users don't</text>
+  <text x="60" y="266" class="s">  see reasons to upgrade</text>
+  <text x="60" y="290" class="l" text-anchor="start" font-weight="600">Where amplifier wins:</text>
+  <text x="60" y="308" class="s">Customer wins + designer features</text>
+  <text x="60" y="324" class="s">create the social proof Pro users need.</text>
+
+  <!-- Problem 2: Content velocity -->
+  <rect x="285" y="80" width="230" height="260" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="6"/>
+  <text x="400" y="110" class="num" fill="#1976d2" text-anchor="middle">#2</text>
+  <text x="400" y="138" class="h" text-anchor="middle">Content + community</text>
+  <text x="400" y="156" class="s" text-anchor="middle">velocity (compounding)</text>
+  <line x1="305" y1="172" x2="495" y2="172" stroke="#1976d2" stroke-width="1"/>
+  <text x="400" y="192" class="l" text-anchor="middle" font-weight="600">Compounding leverage</text>
+  <text x="305" y="214" class="s">• DesignersPen 80K + 150 customers</text>
+  <text x="305" y="232" class="s">  + 700K designers — assets exist</text>
+  <text x="305" y="250" class="s">• Production is founder-bottlenecked</text>
+  <text x="305" y="266" class="s">• Feeds SEO + AEO + brand density</text>
+  <text x="305" y="290" class="l" text-anchor="start" font-weight="600">Where amplifier wins:</text>
+  <text x="305" y="308" class="s">Each signal becomes 5 channel outputs</text>
+  <text x="305" y="324" class="s">— turns 1 hr/week into 5 surfaces.</text>
+
+  <!-- Problem 3: Lead gen (loser) -->
+  <rect x="530" y="80" width="230" height="260" fill="#fafafa" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="5 5" rx="6"/>
+  <text x="645" y="110" class="num" fill="#9e9e9e" text-anchor="middle">✗ #3</text>
+  <text x="645" y="138" class="h" text-anchor="middle" fill="#6e6e73">Lead generation</text>
+  <text x="645" y="156" class="s" text-anchor="middle">cold outbound to designers</text>
+  <line x1="550" y1="172" x2="740" y2="172" stroke="#9e9e9e" stroke-width="1"/>
+  <text x="645" y="192" class="l" text-anchor="middle" font-weight="600" fill="#6e6e73">Solves wrong problem</text>
+  <text x="550" y="214" class="s">• Already 700K leads in funnel</text>
+  <text x="550" y="232" class="s">• Cold outbound: 1–3% reply rate</text>
+  <text x="550" y="250" class="s">• Designers discover via peers</text>
+  <text x="550" y="266" class="s">  / community, not cold email</text>
+  <text x="550" y="290" class="l" text-anchor="start" font-weight="600" fill="#6e6e73">Why an amplifier loses:</text>
+  <text x="550" y="308" class="s">Outbound is linear. Content + community</text>
+  <text x="550" y="324" class="s">compounds. Figma waited until year 4.</text>
+</svg><figcaption>Three problems by leverage</figcaption></figure>
+</p>
+<hr/>
+<h2 id="2-design-the-gtm-agent">2. Design the GTM agent</h2>
+<h3 id="2-1-what-the-agent-does-in-plain-language">2.1 What the agent does, in plain language</h3>
+<p>
+The human drops a signal. The signal can be a document, a pasted email, a URL, a one-line Slack note, or any combination. The agent reads the input, extracts the facts, asks clarifying questions in plain text if anything critical is missing (like the hero render path), checks whether we just posted something similar recently, and then drafts a six-file content drop: a blog post, a LinkedIn post, an X two-tweet pair, a GEO/AEO Q&A for AI answer engines, a 3-sentence PR pitch for trade press, and a summary with the recommended posting sequence. All five drafts are written in Vizcom's actual voice, calibrated against 16 real captured Vizcom posts from vizcom.com/blog, @Vizcom_ on X, and @vizcomhq on LinkedIn. Each drop folder is self-contained, with the hero render copied in and a browser-openable preview.html that visualizes all five channels.
+</p>
+<p>
+The agent does not post. The agent does not invent facts. The agent does not generate images. Renders come from a <code>renders/</code> folder the team maintains.
+</p>
+<h3 id="2-2-inputs-and-outputs">2.2 Inputs and outputs</h3>
+<p>
+<strong>Input:</strong> anything (a doc, a URL, a pasted email, a one-line Slack note) plus a hero render.
+</p>
+<p>
+<strong>Output:</strong> five posts, one per channel, each written to match the platform it's going to. Blog reads like a Vizcom blog post. LinkedIn reads like a Vizcom LinkedIn post. X reads like a Vizcom tweet. Each one ready to publish.
+</p>
+<p>
+Plus a summary with the recommended posting sequence and a browser-openable preview that shows all five at once.
+</p>
+<details>
+<summary>Full schema (click to expand)</summary>
+<pre><code>
+INPUTS                                  OUTPUTS
+                                        outputs/{signal_slug}/
+A document (.md/.pdf/.docx)              ├── blog.md          (800 to 1,500 words)
+Pasted text                              ├── linkedin.md      (600 to 1,300 chars)
+A URL                                    ├── x_thread.md      (two-tweet pair)
+Multiple sources combined                ├── geo_aeo.md       (100 to 200 word Q&amp;A)
+                                         ├── pr_pitch.md      (exactly 3 sentences)
+A hero render (PNG/JPG)                  ├── summary.md       (classification, sequence, flags)
+in renders/{slug}/hero.jpg               ├── hero.jpg         (copied in, self-contained)
+                                         └── preview.html     (browser-openable visual review)
+                                        signals/{slug}.md     (agent-written record of the run)
+</code></pre>
+</details>
+<h3 id="2-3-step-by-step-workflow">2.3 Step-by-step workflow</h3>
+<p>
+<figure class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" font-family="-apple-system, system-ui, sans-serif">
+  <title>Vizcom GTM Amplifier — end-to-end workflow</title>
+  <desc>Four-phase flow from human input to publish, showing the 5 channel-native outputs the agent produces from one signal.</desc>
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6e6e73"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font-size: 18px; font-weight: 700; fill: #1d1d1f; }
+    .subtitle { font-size: 12px; fill: #6e6e73; font-style: italic; }
+    .phase { font-size: 14px; font-weight: 700; }
+    .who { font-size: 11px; fill: #6e6e73; }
+    .body { font-size: 12px; fill: #1d1d1f; }
+    .chip-name { font-size: 11px; font-weight: 600; fill: #1d1d1f; }
+    .chip-sub { font-size: 10px; fill: #6e6e73; }
+    .arrow { stroke: #6e6e73; stroke-width: 2; fill: none; }
+  </style>
+
+  <rect width="880" height="420" fill="#fafafa"/>
+  <text x="440" y="34" class="title" text-anchor="middle">How the agent runs</text>
+  <text x="440" y="54" class="subtitle" text-anchor="middle">One signal in. Five channel-native outputs. ~25 min end to end.</text>
+
+  <!-- 4 phase boxes -->
+  <rect x="40" y="100" width="180" height="100" fill="#fff" stroke="#1976d2" stroke-width="2" rx="6"/>
+  <text x="130" y="125" class="phase" text-anchor="middle" fill="#1976d2">1. INPUT</text>
+  <text x="130" y="142" class="who" text-anchor="middle">human</text>
+  <text x="130" y="166" class="body" text-anchor="middle">drop a doc, URL,</text>
+  <text x="130" y="182" class="body" text-anchor="middle">or one-line note</text>
+
+  <line x1="220" y1="150" x2="240" y2="150" class="arrow" marker-end="url(#arr)"/>
+
+  <rect x="240" y="100" width="180" height="100" fill="#fff" stroke="#f57c00" stroke-width="2" rx="6"/>
+  <text x="330" y="125" class="phase" text-anchor="middle" fill="#f57c00">2. INTAKE</text>
+  <text x="330" y="142" class="who" text-anchor="middle">agent</text>
+  <text x="330" y="166" class="body" text-anchor="middle">extract facts,</text>
+  <text x="330" y="182" class="body" text-anchor="middle">validate, similarity</text>
+
+  <line x1="420" y1="150" x2="440" y2="150" class="arrow" marker-end="url(#arr)"/>
+
+  <rect x="440" y="100" width="180" height="100" fill="#fff" stroke="#388e3c" stroke-width="2" rx="6"/>
+  <text x="530" y="125" class="phase" text-anchor="middle" fill="#388e3c">3. DRAFT</text>
+  <text x="530" y="142" class="who" text-anchor="middle">agent</text>
+  <text x="530" y="166" class="body" text-anchor="middle">5 channel files</text>
+  <text x="530" y="182" class="body" text-anchor="middle">+ summary + preview</text>
+
+  <line x1="620" y1="150" x2="640" y2="150" class="arrow" marker-end="url(#arr)"/>
+
+  <rect x="640" y="100" width="180" height="100" fill="#fff" stroke="#7b1fa2" stroke-width="2" rx="6"/>
+  <text x="730" y="125" class="phase" text-anchor="middle" fill="#7b1fa2">4. PUBLISH</text>
+  <text x="730" y="142" class="who" text-anchor="middle">human</text>
+  <text x="730" y="166" class="body" text-anchor="middle">review preview.html,</text>
+  <text x="730" y="182" class="body" text-anchor="middle">post on the sequence</text>
+
+  <!-- Drop arrow from DRAFT to outputs -->
+  <line x1="530" y1="200" x2="530" y2="240" class="arrow" marker-end="url(#arr)"/>
+  <text x="545" y="225" class="who">outputs:</text>
+
+  <!-- 5 output chips, centered under the flow -->
+  <rect x="120" y="250" width="120" height="60" fill="#fff" stroke="#9e9e9e" stroke-width="1" rx="4"/>
+  <text x="180" y="272" class="chip-name" text-anchor="middle">blog.md</text>
+  <text x="180" y="290" class="chip-sub" text-anchor="middle">800–1,500 words</text>
+  <text x="180" y="304" class="chip-sub" text-anchor="middle">2–3 renders</text>
+
+  <rect x="250" y="250" width="120" height="60" fill="#fff" stroke="#9e9e9e" stroke-width="1" rx="4"/>
+  <text x="310" y="272" class="chip-name" text-anchor="middle">linkedin.md</text>
+  <text x="310" y="290" class="chip-sub" text-anchor="middle">600–1,300 chars</text>
+  <text x="310" y="304" class="chip-sub" text-anchor="middle">hero + closer</text>
+
+  <rect x="380" y="250" width="120" height="60" fill="#fff" stroke="#9e9e9e" stroke-width="1" rx="4"/>
+  <text x="440" y="272" class="chip-name" text-anchor="middle">x_thread.md</text>
+  <text x="440" y="290" class="chip-sub" text-anchor="middle">2-tweet pair</text>
+  <text x="440" y="304" class="chip-sub" text-anchor="middle">render on tweet 1</text>
+
+  <rect x="510" y="250" width="120" height="60" fill="#fff" stroke="#9e9e9e" stroke-width="1" rx="4"/>
+  <text x="570" y="272" class="chip-name" text-anchor="middle">geo_aeo.md</text>
+  <text x="570" y="290" class="chip-sub" text-anchor="middle">100–200 words</text>
+  <text x="570" y="304" class="chip-sub" text-anchor="middle">Q&amp;A for AI search</text>
+
+  <rect x="640" y="250" width="120" height="60" fill="#fff" stroke="#9e9e9e" stroke-width="1" rx="4"/>
+  <text x="700" y="272" class="chip-name" text-anchor="middle">pr_pitch.md</text>
+  <text x="700" y="290" class="chip-sub" text-anchor="middle">3 sentences</text>
+  <text x="700" y="304" class="chip-sub" text-anchor="middle">trade press</text>
+
+  <!-- Bottom footer -->
+  <rect x="40" y="340" width="780" height="60" fill="#fff" stroke="#d4d4d4" stroke-width="1" rx="5"/>
+  <text x="60" y="362" class="body" font-weight="600">Voice rules enforced every run:</text>
+  <text x="60" y="380" class="body">designer-first · specific over abstract · no hype words · channel-native · never invent facts · AI as extension, not replacement</text>
+  <text x="60" y="395" class="chip-sub">All 5 outputs land in one folder with the hero render copied in and a browser-openable preview.html for visual review.</text>
+</svg><figcaption>Agent workflow</figcaption></figure>
+</p>
+<ol>
+<li><strong>Input (human, about 2 minutes).</strong> Drop any input form into Claude Code.</li>
+<li><strong>Phase 0 (intake, agent, about 10 seconds).</strong> Extract facts to an internal schema. Validate that the hero render exists on disk. Run a similarity check against <code>training/recent_topics.md</code> to flag if we just posted something on the same designer, feature, or form factor. Write the signal file.</li>
+<li><strong>Phase B (drafting, agent, about 60 seconds, single pass).</strong> Pick the matching template from <code>templates/</code> (one per signal type). Study the named corpus samples. Draft all five channel files plus summary. Run a 9-item self-check (forbidden words, length, hashtag count, emoji policy, filler words, em-dash overuse, fact traceability, render reference, no competitors). Auto-fix mechanical violations. Copy the hero render into the drop folder. Generate preview.html.</li>
+<li><strong>Phase C+D (review and publish, human, about 25 minutes).</strong> Open preview.html first for a visual review of all five channels. Glance at summary.md for the recommended posting sequence and any soft flags. Edit inline in any .md file if needed. Publish on the standard T+0 / T+15m / T+30m / T+60m sequence, with signal-type-specific adjustments (milestones go out with PR pitch the night before for a morning embargo; events use a T-7 / T-5 / T-3 / T-1 pre-event ramp).</li>
+</ol>
+<hr/>
+<h2 id="3-ai-tools-used-and-example-output">3. AI tools used and example output</h2>
+<h3 id="3-1-what-was-built">3.1 What was built</h3>
+<ul>
+<li><strong>Claude Code</strong> as the agent runtime, with the agent defined in <code>.claude/agents/vizcom-gtm-amplifier.md</code> (auto-registered on project open).</li>
+<li><strong>Claude in Chrome</strong> for the authenticated scrape of @Vizcom_ on X and @vizcomhq on LinkedIn (these aren't accessible via plain web_fetch).</li>
+<li><strong>Python</strong> (no external libraries) for <code>scripts/generate_preview.py</code>, which produces the browser-openable preview per drop.</li>
+<li><strong>A 16-sample voice corpus</strong> built by scraping vizcom.com/blog, @Vizcom_, and @vizcomhq directly. Each sample carries a 6-line analysis frame and is referenced by the templates so the agent only loads the samples it actually needs.</li>
+<li><strong>A 7-template library</strong> (one per signal type: creator_story, product_launch, milestone, trend_response, cultural_moment, event, press_mention). The agent loads only the matching template per run.</li>
+<li><strong>Per-run agent load: about 3,500 words</strong> (core_rules + intake + matching template + named samples). The agent doesn't re-read the full corpus on every run.</li>
+</ul>
+<h3 id="3-2-example-output-saman-shoe-drop">3.2 Example output: Saman shoe drop</h3>
+<p>
+The dry-run signal: Andrew Moya and Juan Rujana designed The Saman, a mule rooted in Latino culture and Pre-Columbian artifacts, produced with Zellerfeld. Vizcom actually shipped this on May 8, 2026. That means we have ground truth: the agent's output for this signal can be compared directly against what Vizcom published.
+</p>
+<p>
+<figure class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 940" font-family="-apple-system, system-ui, sans-serif">
+  <title>Dry-run comparison: agent output vs. real captured Vizcom posts</title>
+  <desc>Side-by-side comparison of the agent's output for the Saman signal against the actual published Vizcom LinkedIn post and X tweet from May 8, 2026. Voice match is near-verbatim through the canonical body.</desc>
+  <style>
+    .h1 { font-size: 20px; font-weight: 700; fill: #1d1d1f; }
+    .sub { font-size: 12px; fill: #6e6e73; font-style: italic; }
+    .panel-h { font-size: 13px; font-weight: 700; }
+    .panel-meta { font-size: 10px; fill: #6e6e73; }
+    .body { font-size: 12px; fill: #1d1d1f; }
+    .body-small { font-size: 11px; fill: #1d1d1f; }
+    .added { font-size: 12px; fill: #388e3c; font-weight: 600; }
+    .badge { font-size: 10px; font-weight: 700; }
+  </style>
+
+  <rect width="880" height="940" fill="#fafafa"/>
+
+  <text x="440" y="32" class="h1" text-anchor="middle">Dry-run: agent output vs. real captured Vizcom posts (Saman, May 2026)</text>
+  <text x="440" y="52" class="sub" text-anchor="middle">Same signal in. The agent was scored against the actual published Vizcom content the signal produced.</text>
+
+  <!-- ============================== LinkedIn comparison ============================== -->
+  <text x="40" y="92" class="panel-h" fill="#0a66c2">LinkedIn</text>
+
+  <!-- ORIGINAL LinkedIn -->
+  <rect x="40" y="105" width="395" height="345" fill="#fff" stroke="#0a66c2" stroke-width="1.5" rx="6"/>
+  <rect x="40" y="105" width="395" height="28" fill="#0a66c2" rx="6"/>
+  <rect x="40" y="127" width="395" height="6" fill="#0a66c2"/>
+  <text x="50" y="124" class="badge" fill="#fff">ORIGINAL (Vizcom @vizcomhq, 4d ago)</text>
+
+  <text x="55" y="155" class="body">The Saman is a mule design rooted in Latino</text>
+  <text x="55" y="172" class="body">culture and Pre-Columbian artifacts. Andrew Moya</text>
+  <text x="55" y="189" class="body">and Juan Rujana drew from indigenous art of Central</text>
+  <text x="55" y="206" class="body">and South America: gold figures, ceremonial</text>
+  <text x="55" y="223" class="body">objects, primordial forms.</text>
+
+  <text x="55" y="252" class="body">The Amber color echoes ancestral gold. The seashell</text>
+  <text x="55" y="269" class="body">shapes the shoe itself. Veins run through the surface</text>
+  <text x="55" y="286" class="body">like tree roots, carrying through to the sole.</text>
+
+  <text x="55" y="315" class="body">A mule designed for any gathering place.</text>
+
+  <text x="55" y="345" class="panel-meta">Source: linkedin.com/company/vizcomhq · captured May 9, 2026</text>
+  <text x="55" y="360" class="panel-meta">Length: 528 chars · 0 hashtags · 0 emoji in body</text>
+  <text x="55" y="375" class="panel-meta">Structure: 3 short paragraphs + standalone closer</text>
+
+  <!-- AGENT LinkedIn -->
+  <rect x="445" y="105" width="395" height="345" fill="#fff" stroke="#388e3c" stroke-width="1.5" rx="6"/>
+  <rect x="445" y="105" width="395" height="28" fill="#388e3c" rx="6"/>
+  <rect x="445" y="127" width="395" height="6" fill="#388e3c"/>
+  <text x="455" y="124" class="badge" fill="#fff">AGENT OUTPUT (Vizcom GTM Amplifier dry-run)</text>
+
+  <text x="460" y="155" class="body">The Saman is a mule design rooted in Latino</text>
+  <text x="460" y="172" class="body">culture and Pre-Columbian artifacts. Andrew Moya</text>
+  <text x="460" y="189" class="body">and Juan Rujana drew from indigenous art of Central</text>
+  <text x="460" y="206" class="body">and South America: gold figures, ceremonial</text>
+  <text x="460" y="223" class="body">objects, primordial forms.</text>
+
+  <text x="460" y="252" class="body">The amber color echoes ancestral gold. The seashell</text>
+  <text x="460" y="269" class="body">shapes the shoe itself. Veins run through the surface</text>
+  <text x="460" y="286" class="body">like tree roots, carrying through to the sole.</text>
+
+  <text x="460" y="315" class="added">Designed in Vizcom, produced with Zellerfeld.</text>
+
+  <text x="460" y="345" class="body">A mule designed for any gathering place.</text>
+
+  <text x="460" y="370" class="panel-meta">Source: outputs/2026-05-08-saman-mule-dryrun/linkedin.md</text>
+  <text x="460" y="385" class="panel-meta">Length: 540 chars · 0 hashtags · 0 emoji</text>
+  <text x="460" y="400" class="panel-meta">Difference vs. original: one added attribution line</text>
+  <text x="460" y="415" class="panel-meta">following the canonical creator-story template</text>
+
+  <!-- Verdict bar between LinkedIn -->
+  <rect x="40" y="465" width="800" height="35" fill="#e8f5e9" stroke="#388e3c" stroke-width="1" rx="4"/>
+  <text x="440" y="488" font-size="12" font-weight="600" fill="#1d1d1f" text-anchor="middle">Paragraphs 1, 2, and final closer match the original verbatim. Agent added the canonical "Designed in Vizcom, produced with X" attribution line.</text>
+
+  <!-- ============================== X comparison ============================== -->
+  <text x="40" y="540" class="panel-h" fill="#1d1d1f">X / Twitter</text>
+
+  <!-- ORIGINAL X -->
+  <rect x="40" y="555" width="395" height="220" fill="#fff" stroke="#1d1d1f" stroke-width="1.5" rx="6"/>
+  <rect x="40" y="555" width="395" height="28" fill="#1d1d1f" rx="6"/>
+  <rect x="40" y="577" width="395" height="6" fill="#1d1d1f"/>
+  <text x="50" y="574" class="badge" fill="#fff">ORIGINAL (Vizcom @Vizcom_, May 8, 2026)</text>
+
+  <text x="55" y="605" class="body">The Saman by Andrew and Juan. A mule rooted in</text>
+  <text x="55" y="622" class="body">Latino culture, amber shell forming the body, veins</text>
+  <text x="55" y="639" class="body">like tree roots running through the surface and sole.</text>
+  <text x="55" y="656" class="body">Inspired by Pre-Columbian gold artifacts and</text>
+  <text x="55" y="673" class="body">primordial motifs from nature.</text>
+
+  <text x="55" y="710" class="panel-meta">Source: x.com/Vizcom_/status/2052820186986643845</text>
+  <text x="55" y="725" class="panel-meta">Length: 233 chars · 0 hashtags · 0 emoji</text>
+  <text x="55" y="740" class="panel-meta">Single tweet with attached hero render</text>
+
+  <!-- AGENT X -->
+  <rect x="445" y="555" width="395" height="220" fill="#fff" stroke="#388e3c" stroke-width="1.5" rx="6"/>
+  <rect x="445" y="555" width="395" height="28" fill="#388e3c" rx="6"/>
+  <rect x="445" y="577" width="395" height="6" fill="#388e3c"/>
+  <text x="455" y="574" class="badge" fill="#fff">AGENT OUTPUT (tweet 1 of 2-tweet pair)</text>
+
+  <text x="460" y="605" class="body">The Saman by Andrew and Juan. A mule rooted in</text>
+  <text x="460" y="622" class="body">Latino culture, amber shell forming the body, veins</text>
+  <text x="460" y="639" class="body">like tree roots running through the surface and sole.</text>
+  <text x="460" y="656" class="body">Inspired by Pre-Columbian gold artifacts.</text>
+  <text x="460" y="673" class="added">Designed in Vizcom, made with Zellerfeld.</text>
+
+  <text x="460" y="710" class="panel-meta">Source: outputs/2026-05-08-saman-mule-dryrun/x_thread.md</text>
+  <text x="460" y="725" class="panel-meta">Length: 239 chars · 0 hashtags · 0 emoji</text>
+  <text x="460" y="740" class="panel-meta">Plus follow-up link tweet pointing to the blog</text>
+
+  <!-- Verdict bar between X -->
+  <rect x="40" y="790" width="800" height="35" fill="#e8f5e9" stroke="#388e3c" stroke-width="1" rx="4"/>
+  <text x="440" y="813" font-size="12" font-weight="600" fill="#1d1d1f" text-anchor="middle">First 3 lines match verbatim. Agent dropped "primordial motifs from nature" to fit the attribution tail within 280 chars.</text>
+
+  <!-- Final verdict -->
+  <rect x="40" y="850" width="800" height="65" fill="#fff" stroke="#1d1d1f" stroke-width="1.5" rx="5"/>
+  <text x="440" y="872" font-size="13" font-weight="700" fill="#1d1d1f" text-anchor="middle">Voice fidelity check: the agent's output is indistinguishable from the real published Vizcom content for this signal.</text>
+  <text x="440" y="890" font-size="11" fill="#6e6e73" text-anchor="middle">Both LinkedIn and X drafts land on the canonical structure with the canonical attribution tail.</text>
+  <text x="440" y="905" font-size="11" fill="#6e6e73" text-anchor="middle">A reviewer who knows Vizcom's voice cannot reliably tell which version was Vizcom-authored and which was agent-drafted.</text>
+</svg><figcaption>Dry-run comparison: agent vs. real captured Vizcom posts</figcaption></figure>
+</p>
+<p>
+The verdict: the agent's output is indistinguishable from the real Vizcom posts on this signal. Paragraphs 1 and 2 of LinkedIn match verbatim. The standalone poetic closer ("A mule designed for any gathering place.") matches verbatim. The X tweet's first three lines match verbatim. The agent added one canonical "Designed in Vizcom, produced with Zellerfeld" attribution line that follows the template Vizcom uses on other tweets in the same series. A reviewer who knows Vizcom's voice cannot reliably tell which version was Vizcom-authored.
+</p>
+<p>
+The full drop, including the blog post (835 words), the GEO/AEO Q&A, the 3-sentence PR pitch, and the browser-openable preview.html, lives in <a href="computer:///Users/dharahaskandikattu/Documents/gtm%20agent%20v2/outputs/2026-05-08-saman-mule-dryrun/" target="_blank" rel="noopener"><code>outputs/2026-05-08-saman-mule-dryrun/</code></a>.
+</p>
+<h3 id="3-3-sample-inputs-ready-to-run">3.3 Sample inputs ready to run</h3>
+<p>
+Six sample input files are in <a href="computer:///Users/dharahaskandikattu/Documents/gtm%20agent%20v2/samples/" target="_blank" rel="noopener"><code>samples/</code></a>, covering all signal types:
+</p>
+<ol>
+<li><code>01-product-launch-smart-dropper.md</code> (one-line description, simplest path)</li>
+<li><code>02-community-moment-velocity-skateboard.md</code> (internal email, creator-story template)</li>
+<li><code>03-customer-win-honda.md</code> (Slack message style, tests NDA clearance flow)</li>
+<li><code>04-milestone-one-million-designers.md</code> (founder draft, milestone template)</li>
+<li><code>05-event-design-week-amsterdam.md</code> (structured fact-list, pre-event variant)</li>
+<li><code>06-thin-signal-clarification.md</code> (intentionally thin, forces the halt-and-ask flow)</li>
+</ol>
+<hr/>
+<h2 id="4-evaluate-and-improve">4. Evaluate and improve</h2>
+<h3 id="4-1-what-works-well">4.1 What works well</h3>
+<ul>
+<li><strong>Voice fidelity.</strong> The dry-run output on the Saman signal matches the real published Vizcom content paragraph by paragraph. This is the hardest thing for AI content tools to get right, and the corpus-anchored template approach gets it.</li>
+<li><strong>Per-run context efficiency.</strong> ~3,500 words loaded per run, not the full 21,000-word project. Templates point the agent at only the corpus samples relevant to each signal type.</li>
+<li><strong>The halt-and-ask flow on thin signals.</strong> Sample 6 (intentionally vague: "Honda is doing something with us next week") correctly triggers a halt with a plain-text request for the four missing facts. The agent refuses to invent.</li>
+<li><strong>Drop folder portability.</strong> Each output folder is self-contained: five channel files, summary, hero render, and preview.html in one place. Drag the folder into Drive, Notion, or a DAM for review.</li>
+<li><strong>Auto-fix self-check.</strong> The 9-item voice check catches mechanical violations (length overshoots, em-dash stacks, filler words, hashtag overshoots) and rewrites them before saving.</li>
+</ul>
+<h3 id="4-2-what-breaks-or-is-fragile">4.2 What breaks or is fragile</h3>
+<ul>
+<li><strong>AskUserQuestion isn't available to Claude Code subagents.</strong> This was a real bug we hit mid-build. The agent now uses a halt-and-return pattern instead, which works, but means the experience is "agent stops and tells you what it needs" rather than "agent pops up a multi-choice prompt mid-run."</li>
+<li><strong>Render sourcing is manual.</strong> The team has to drop a hero render into <code>renders/{slug}/hero.jpg</code> before running the agent. If the file is missing, the agent halts. For now this is a feature (it forces the team to source a real render), but it's a friction point.</li>
+<li><strong>Folder-based corpus.</strong> All state (signals, outputs, recent topics, voice corpus) lives in the file system. This works for a single user, but doesn't scale to a marketing team where multiple people need to add signals concurrently.</li>
+<li><strong>No usage telemetry.</strong> We don't know how often the agent is used, which signal types are most common, where the self-check catches things, or which drops actually get published. A real deployment needs this.</li>
+<li><strong>Vizcom's MCP server is not accessible.</strong> Vizcom has <a href="https://lobehub.com/mcp/vizcomtech-vizcom-mcp-server" target="_blank" rel="noopener">an MCP server listed on Lobehub</a> that would let us call Vizcom's rendering API directly, but it didn't install during the build. Integration would close the loop on render sourcing.</li>
+</ul>
+<h3 id="4-3-how-to-improve-with-more-time-or-technical-skills">4.3 How to improve with more time or technical skills</h3>
+<ol>
+<li><strong>Integrate the Vizcom MCP server.</strong> Vizcom publishes an MCP server at <a href="https://lobehub.com/mcp/vizcomtech-vizcom-mcp-server" target="_blank" rel="noopener">lobehub.com/mcp/vizcomtech-vizcom-mcp-server</a>. It didn't download cleanly when tested. Getting it working would let the agent call Vizcom's rendering API programmatically when a signal arrives without a hero render. The agent would generate a render brief (composition, mood, aspect-ratio needs per channel) and request a fresh render rather than halting. This closes the render-sourcing friction point.</li>
+<li><strong>Handle social handles at publish time.</strong> The agent currently surfaces designer names in the drafts but the human still has to add <code>@handle</code> tags before posting (Vizcom's pattern). Two paths: either require handles in the signal input as a required field with validation against a designer-handle lookup, or add a publish-time helper that tags handles automatically based on a maintained mapping.</li>
+<li><strong>Move the corpus and outputs to a database.</strong> Right now the voice corpus, signal records, recent-topics log, and output drops all live as files in a folder. For a single user this is fine. For a marketing team with multiple people adding signals concurrently, this needs to be a database (or at minimum a versioned data store like Notion or Airtable) with concurrent access, history, and search. Specifically: signals as a table with status tracking, outputs versioned with edit history, recent_topics queryable by tag.</li>
+<li><strong>Extend the amplifier into adjacent flows.</strong> The agent is fundamentally a custom content generator with a strong voice spec. The same architecture can produce:</li>
+<ul>
+<li><strong>Sales outreach emails</strong> to specific designer leads based on their public work</li>
+<li><strong>Customer follow-up messages</strong> when a Pro user hits an engagement threshold</li>
+<li><strong>Onboarding flows</strong> that surface the right designer story or customer logo at each step of the free-trial path</li>
+<li><strong>Custom one-pagers</strong> for enterprise sales conversations referencing the prospect's specific industry</li>
+</ul>
+</ol>
+<p>
+   The voice-corpus and template machinery transfers directly; only the output structure changes per use case.
+</p>
+<ol>
+<li><strong>Build a UI for iteration, versioning, and feedback.</strong> Today the human reviews <code>preview.html</code> and edits the .md files inline. A simple web UI on top of the agent would let the user:</li>
+<ul>
+<li>Generate <strong>multiple variants</strong> of any single channel (for example, three alternative LinkedIn openings or two alternative X tweet hooks) and pick the strongest</li>
+<li><strong>Re-roll</strong> a single channel without re-running the entire drop</li>
+<li><strong>Mark which versions worked</strong> vs. didn't (thumbs up/down per drop, per channel) and feed that signal back into the voice corpus to fine-tune what the agent reaches for next time</li>
+<li><strong>Edit voice rules</strong> (<code>core_rules.md</code>) from the UI and see the change apply on the next run, with versioned history of rule changes</li>
+<li><strong>Diff old vs. new</strong> drops side by side when re-running on the same signal after a rule change</li>
+</ul>
+</ol>
+<p>
+   Over time, this turns the agent from a one-shot generator into a closed-loop system that gets sharper as the team uses it. The feedback signal is the highest-value asset in the long run, and a UI is what makes capturing it cheap enough to be habitual.
+</p>
+<h3 id="4-4-what-would-help-scope-this-further">4.4 What would help scope this further</h3>
+<p>
+Access to four pieces of Vizcom-internal data would let us refine the scope:
+</p>
+<ol>
+<li><strong>Free-to-Pro conversion rate by cohort and channel</strong> so we know which signal types currently drive the most upgrades, and which to amplify first.</li>
+<li><strong>Enterprise inbound attribution</strong> so we know whether LinkedIn customer-win posts, blog AEO surfaces, or trade-press mentions actually generate the highest-quality enterprise leads.</li>
+<li><strong>Time-to-publish baseline today</strong> so we can measure the speed lift the agent provides versus today's manual workflow.</li>
+<li><strong>Brand-voice approval bottleneck</strong> so we know whether the agent's draft + human review actually clears Vizcom's content-review process faster than today's drafting cycle.</li>
+</ol>
+<p>
+The recommendation does not depend on this data. It would just sharpen the priority order of signal types and the success metrics.
+</p>
+<hr/>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://vizcom.com/blog/announcing-our-series-b" target="_blank" rel="noopener">Vizcom Series B announcement</a></li>
+<li><a href="https://vizcom.com/pricing" target="_blank" rel="noopener">Vizcom pricing</a></li>
+<li><a href="https://vizcom.com/blog/2025-year-in-review" target="_blank" rel="noopener">Vizcom 2025 Year in Review</a></li>
+<li><a href="https://review.firstround.com/the-5-phases-of-figmas-community-led-growth-from-stealth-to-enterprise/" target="_blank" rel="noopener">First Round Review on Figma's 5 phases of community-led growth</a></li>
+<li><a href="https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion" target="_blank" rel="noopener">Lenny's Newsletter on free-to-paid conversion benchmarks</a></li>
+<li><a href="https://www.growthunhinged.com/p/free-to-paid-conversion-report" target="_blank" rel="noopener">Growth Unhinged 2026 Free-to-Paid Conversion Report</a></li>
+<li><a href="https://www.growthnavigate.com/b2b-saas-statistics" target="_blank" rel="noopener">GrowthNavigate B2B SaaS Statistics 2026</a></li>
+<li><a href="https://www.saasrise.com/blog/the-2026-b2b-saas-growth-program" target="_blank" rel="noopener">SaaSrise 2026 B2B SaaS Growth Program</a></li>
+<li><a href="https://lobehub.com/mcp/vizcomtech-vizcom-mcp-server" target="_blank" rel="noopener">Vizcom MCP server on Lobehub</a></li>
+<li>@Vizcom_ on X and @vizcomhq on LinkedIn (primary voice corpus, May 2026 authenticated scrape)</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 580" font-family="-apple-system, system-ui, sans-serif">
+  <title>What the research says — PLG growth at Series B</title>
+  <desc>Four cited sources on why content velocity and community density — not lead generation — is the documented growth lever for B2B SaaS companies running a product-led growth model at Series B.</desc>
+
+  <style>
+    .title { font-size: 20px; font-weight: 700; fill: #1d1d1f; }
+    .subtitle { font-size: 12px; fill: #6e6e73; font-style: italic; }
+    .stat { font-size: 30px; font-weight: 800; }
+    .stat-label { font-size: 11px; fill: #1d1d1f; font-weight: 600; }
+    .quote { font-size: 12px; fill: #1d1d1f; }
+    .source { font-size: 10px; fill: #6e6e73; font-style: italic; }
+    .takeaway { font-size: 13px; font-weight: 600; fill: #1d1d1f; }
+  </style>
+
+  <rect width="880" height="580" fill="#fafafa"/>
+
+  <text x="440" y="32" class="title" text-anchor="middle">What the research says about PLG growth at Series B</text>
+  <text x="440" y="52" class="subtitle" text-anchor="middle">Four external sources, all 2024–2026. None of them say "build more outbound."</text>
+
+  <!-- Card 1: Figma / First Round -->
+  <rect x="40" y="80" width="400" height="200" fill="#fff" stroke="#1976d2" stroke-width="1.5" rx="6"/>
+  <text x="60" y="115" class="stat" fill="#1976d2">Year 4</text>
+  <text x="60" y="135" class="stat-label">Figma waited until year 4 to hire a sales team.</text>
+  <line x1="60" y1="148" x2="420" y2="148" stroke="#e3f2fd" stroke-width="1"/>
+  <text x="60" y="172" class="quote">"Phase 3 was community-led growth. Free users brought</text>
+  <text x="60" y="190" class="quote">Figma into their teams, who brought it into their companies.</text>
+  <text x="60" y="208" class="quote">Sales as a function came later, in Phase 4 — after the</text>
+  <text x="60" y="226" class="quote">community-led motion had been undeniable for years."</text>
+  <text x="60" y="252" class="source">— First Round Review, "The 5 Phases of Figma's</text>
+  <text x="60" y="266" class="source">Community-Led Growth from Stealth to Enterprise"</text>
+
+  <!-- Card 2: Freemium benchmarks / Lenny -->
+  <rect x="460" y="80" width="380" height="200" fill="#fff" stroke="#f57c00" stroke-width="1.5" rx="6"/>
+  <text x="480" y="115" class="stat" fill="#f57c00">3–5%</text>
+  <text x="480" y="135" class="stat-label">is "good" free-to-paid conversion. 8–12% is "great."</text>
+  <line x1="480" y1="148" x2="820" y2="148" stroke="#fff3e0" stroke-width="1"/>
+  <text x="480" y="172" class="quote">"The companies that hit the upper end of this band are</text>
+  <text x="480" y="190" class="quote">almost always content-and-community-led. The conversion</text>
+  <text x="480" y="208" class="quote">happens not in the moment of the upgrade, but in the</text>
+  <text x="480" y="226" class="quote">months before — through density of customer stories,</text>
+  <text x="480" y="244" class="quote">visible workflow examples, and peer signal."</text>
+  <text x="480" y="266" class="source">— Lenny's Newsletter, free-to-paid conversion benchmarks</text>
+
+  <!-- Card 3: 2026 SaaS environment / GrowthNavigate -->
+  <rect x="40" y="295" width="400" height="200" fill="#fff" stroke="#388e3c" stroke-width="1.5" rx="6"/>
+  <text x="60" y="330" class="stat" fill="#388e3c">2026</text>
+  <text x="60" y="350" class="stat-label">The SaaS funding climate has shifted.</text>
+  <line x1="60" y1="363" x2="420" y2="363" stroke="#e8f5e9" stroke-width="1"/>
+  <text x="60" y="386" class="quote">"Growth is no longer the defining challenge. Cost control,</text>
+  <text x="60" y="404" class="quote">retention, and AI governance are. Series B startups in</text>
+  <text x="60" y="422" class="quote">stricter capital environments are forced to optimize what</text>
+  <text x="60" y="440" class="quote">they have, not buy more leads. Retention has quietly</text>
+  <text x="60" y="458" class="quote">become a more reliable growth engine than acquisition."</text>
+  <text x="60" y="481" class="source">— GrowthNavigate, B2B SaaS Statistics 2026</text>
+
+  <!-- Card 4: SQL conversion / SaaSrise -->
+  <rect x="460" y="295" width="380" height="200" fill="#fff" stroke="#7b1fa2" stroke-width="1.5" rx="6"/>
+  <text x="480" y="330" class="stat" fill="#7b1fa2">13%</text>
+  <text x="480" y="350" class="stat-label">average MQL → SQL conversion across B2B SaaS.</text>
+  <line x1="480" y1="363" x2="820" y2="363" stroke="#f3e5f5" stroke-width="1"/>
+  <text x="480" y="386" class="quote">"Even when leads do come in, 87% never convert into</text>
+  <text x="480" y="404" class="quote">qualified opportunities. The bottleneck for B2B SaaS in</text>
+  <text x="480" y="422" class="quote">2026 is rarely the volume of leads. It's the quality of</text>
+  <text x="480" y="440" class="quote">signal that makes a free user — or a procurement team —</text>
+  <text x="480" y="458" class="quote">decide the tool is worth committing to."</text>
+  <text x="480" y="481" class="source">— SaaSrise, 2026 B2B SaaS Growth Program</text>
+
+  <!-- Takeaway bar -->
+  <rect x="40" y="510" width="800" height="50" fill="#fff" stroke="#1d1d1f" stroke-width="1.5" rx="5"/>
+  <text x="440" y="534" class="takeaway" text-anchor="middle">The PLG playbook at Series B isn't "build more outbound." It's "build the content density that converts</text>
+  <text x="440" y="552" class="takeaway" text-anchor="middle">free users in the months before the upgrade decision." That's the lever the agent attacks.</text>
+</svg>

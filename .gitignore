@@ -1,0 +1,36 @@
+# macOS noise
+.DS_Store
+**/.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Deprecated SVG placeholders left on disk because the sandbox could not delete them.
+# They contain only deprecation markers and are not referenced anywhere.
+writeup/visuals/funnel.svg
+writeup/visuals/arr_by_conversion.svg
+
+# Ephemeral
+*.log
+*.tmp
+.cache/
+
+# Sensitive
+.env
+.env.local
+credentials.json
