@@ -1,6 +1,6 @@
-# Vizcom GTM Amplifier — Strategic Writeup
+# Track 2 Vizcom GTM Amplifier — Strategic Writeup
 
-A recommendation built on what comparable companies invested in, what the documented PLG playbook says, and what the 2026 SaaS environment rewards. Not on claims about Vizcom's internal funnel metrics, which are not public.
+For the purpose of this analysis, I chose to go with Vizcom as my preferred company based on my research on all the companies.
 
 ---
 
